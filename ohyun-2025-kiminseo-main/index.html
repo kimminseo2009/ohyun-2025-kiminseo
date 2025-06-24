@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API 계산기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>  <div class="calculator">
+    <h2>API 계산기 (10개 입력)</h2>
+    <div id="inputContainer">
+      <div class="input-group">
+        <input type="number" class="number-input" placeholder="숫자 1">
+      </div>
+      <div class="input-group">
+        <input type="number" class="number-input" placeholder="숫자 2">
+      </div>
+      <div class="input-group">
+        <input type="number" class="number-input" placeholder="숫자 3">
+      </div>
+      <div class="input-group">
+        <input type="number" class="number-input" placeholder="숫자 4">
+      </div>
+      <div class="input-group">
+        <input type="number" class="number-input" placeholder="숫자 5">
+      </div>
+      <div class="input-group">
+        <input type="number" class="number-input" placeholder="숫자 6">
+      </div>
+      <div class="input-group">
+        <input type="number" class="number-input" placeholder="숫자 7">
+      </div>
+      <div class="input-group">
+        <input type="number" class="number-input" placeholder="숫자 8">
+      </div>
+      <div class="input-group">
+        <input type="number" class="number-input" placeholder="숫자 9">
+      </div>
+      <div class="input-group">
+        <input type="number" class="number-input" placeholder="숫자 10">
+      </div>
+    </div>
+    <select id="operator">
+      <option value="+">더하기 (+)</option>
+      <option value="-">빼기 (-)</option>
+      <option value="*">곱하기 (×)</option>
+      <option value="/">나누기 (÷)</option>
+    </select>
+    <button id="calcBtn">계산</button>
+    <button id="historyBtn">기록 보기</button>
+    <button id="clearBtn">초기화</button>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
