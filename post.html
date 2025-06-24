@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>여기는 게시판이다</h1>
+    <nav>
+      <button class="basic-button" id="toggle-write">글쓰기</button>
+    </nav>
+    <ol id="board"></ol>
+
+    <div id="post-modal" class="modal">
+      <div class="modal-content">
+        <h2 id="modal-title"></h2>
+        <p id="modal-content"></p>
+        <div class="modal-buttons">
+          <button class="modal-edit basic-button">수정</button>
+          <button class="modal-delete basic-button">삭제</button>
+          <button class="modal-close basic-button">닫기</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="form-modal" class="modal">
+      <div class="modal-content">
+        <h2 id="form-modal-title">글쓰기</h2>
+        <form id="post-form">
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="제목을 입력하세요"
+            autocomplete="off"
+          />
+          <textarea
+            name="content"
+            id="content"
+            placeholder="내용을 입력하세요"
+          ></textarea>
+          <div class="modal-buttons">
+            <button type="submit" class="basic-button">제출</button>
+            <button type="button" class="form-cancel basic-button">취소</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
